@@ -74,12 +74,6 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm install
 
-      - name: Donwload artifacts.. dist.. 💋
-        uses: actions/download-artifact@v3
-        with:
-          name: dist-files
-          path: ./build
-
       - name: Output Contents.. 💥
         run: ls
 
