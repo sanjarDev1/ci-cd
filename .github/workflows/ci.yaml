@@ -87,5 +87,5 @@ jobs:
             cd /var/www/html/ci-cd
             sudo git pull
             sudo yarn
-            sudo npm run build
+            sudo yarn build
             echo "Deployed... 🥹😂🥹"
