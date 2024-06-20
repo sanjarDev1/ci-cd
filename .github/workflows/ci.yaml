@@ -84,7 +84,7 @@ jobs:
           username: ${{secrets.SERVER_USERNAME}}
           key: ${{secrets.SERVER_PRIVATE_KEY}}
           script: |
-            cd /var/www/html/ci-cd
+            cd /var/www/ci-cd
             sudo git pull
             sudo yarn
             sudo yarn build
